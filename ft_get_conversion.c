@@ -88,12 +88,12 @@ int						ft_get_conversion(char **fmt, va_list va)
 		(ft_strchr_f("#0-+ ", **fmt)) ? ft_flags(fmt, &lst) : 0;
 		if (ft_strchr_f("123456789", **fmt))
 		{
-			lst.width = ft_atoi(fmt);
+			lst.width = ft_atoi_f(fmt);
 			continue ;
 		}
 		if (**fmt == '.' && (*fmt)++)
 		{
-			lst.precision = ft_atoi(fmt);
+			lst.precision = ft_atoi_f(fmt);
 			continue ;
 		}
 		(ft_strchr_f("hlzj", **fmt)) ? ft_modifier(fmt, &lst) : 0;

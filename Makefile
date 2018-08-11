@@ -6,7 +6,7 @@
 #    By: tmashigo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/08/11 11:30:22 by tmashigo          #+#    #+#              #
-#    Updated: 2018/08/11 11:33:12 by tmashigo         ###   ########.fr        #
+#    Updated: 2018/08/11 15:53:28 by tmashigo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ OBJECT = ./ft_printf.o \
 	./ft_strchr_f.o \
 	./ft_strsub.o \
 	./ft_strdup.o \
-	./ft_atoi.o \
+	./ft_atoi_f.o \
 	./ft_get_print_str.o \
 	./ft_get_print_wchar.o \
 	./ft_get_print_wstr.o \
@@ -67,8 +67,8 @@ ft_strchr_f.o: ft_strchr_f.c
 ft_strsub.o: ft_strsub.c
 	$(GCC) $(F) -c ft_strsub.c
 
-ft_atoi.o: ft_atoi.c
-	$(GCC) $(F) -c ft_atoi.c
+ft_atoi_f.o: ft_atoi_f.c
+	$(GCC) $(F) -c ft_atoi_f.c
 
 ft_get_print_str.o: ft_get_print_str.c
 	$(GCC) $(F) -c ft_get_print_str.c
@@ -96,9 +96,6 @@ ft_memcpy.o: ft_memcpy.c
 
 ft_strlen.o: ft_strlen.c
 	$(GCC) $(F) -c ft_strlen.c
-
-ft_atoi.o: ft_atoi.c
-	$(GCC) $(F) -c ft_atoi.c
 
 ft_get_print_percent.o: ft_get_print_percent.c
 	$(GCC) $(F) -c ft_get_print_percent.c
